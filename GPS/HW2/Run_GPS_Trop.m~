@@ -1,0 +1,85 @@
+%% Andrew Saiko - MAE 593 - GPS - Homework #2
+format long g
+clear
+clc
+load('dataSet3.mat')
+%% Creates a 14x3 matrix with the nominal position
+nom_XYZ=ones(14,3);
+nom_XYZ(:,1)=nomXYZ(1);
+nom_XYZ(:,2)=nomXYZ(2);
+nom_XYZ(:,3)=nomXYZ(3);
+nomCLOCK=clockBiasNom;
+%% Establishes Constants needed for Trop Delay
+P0=1013; %Total pressure [mbar]
+T0=288.15; %Temperature [K]
+e0=12.8; %Partial pressure due to water [mbar]
+%% Begins iterations
+for i=1:2400;
+    %% Truth Inputs for each iteration, i
+    ClockBias_Truth = truthClockBias(i);
+    XYZ_Truth = truthXYZ(:,i);
+    %% Transforming XYZ -> ENU
+    [enu] = xyz2enu(XYZ_Truth,nomXYZ);
+    enu_TRUTH(:,i) = enu;
+    %% Transforming XYZ -> Lat, Lon, Height
+    [llh] = xyz2llh(XYZ_Truth);
+    llh_TRUTH(i,:) = llh;
+    for j = 1:nSat(i);
+        [el(i,,Az]=calcElAz(
+    %% Calculating the Mapping Function
+    m(i)=1/sqrt(1-(cos(el(i))/1.001)^2);
+    %% Calculating Wet/Dry Zenith Trop delays
+    TzDRY(i)=.002277*(1+.0026*cos(2*llh(1))+.00028*llh(3)/1000)*P0;
+    TzWET(i)=.002277*((1255/T0)+.05)*e0;
+    %% Calculating the Scaled Trop Zenith Delay
+    Tz(i)=TzDRY(i)*m(i)+TzWET(i)*m(i);
+    %% Giving Inputs and Calculating XYZ/CLOCK Estimates
+    Trop=Tz(i);
+    numSat=nSat(i);
+    pr_OBS = prDataP1(1:nSat(i),i);
+    sats_XYZ = satsXYZ(1:nSat(i),1:3,i);
+    c = 299792458; % m/s
+    [Clock_Bias_Estimate,XYZ_Estimate] = GPS_Trop(nomXYZ,nomCLOCK,pr_OBS,sats_XYZ,numSat,Trop);
+    %% Storing Function Estimates in a matrix
+    ClockBias_Est(i,1) = Clock_Bias_Estimate;
+    XYZ_Est(i,:) = XYZ_Estimate;
+    %% Calculating Errors and storing in a matrix
+    I_Error_XYZ(i,1) = norm(nomXYZ'-truthXYZ(:,i));
+    F_Error_XYZ(i,1) = norm(XYZ_Est(i,:)'-truthXYZ(:,i));
+    I_Error_CLOCK(i,1) = norm(nomCLOCK-truthClockBias(1,i));
+    F_Error_CLOCK(i,1) = norm(ClockBias_Est(i,1)-truthClockBias(1,i));
+    %% Transforming Estimated XYZ -> ENU
+    [enu] = xyz2enu(XYZ_Estimate,nomXYZ);
+    enu_Est(:,i) = enu;
+    %% Transforming Estimated XYZ -> Lat, Lon, Height
+    [llh] = xyz2llh(XYZ_Estimate);
+    llh_Est(:,i) = enu;
+    %% Calculated ENU Errors
+    I_Error_XYZ_ENU(i,1) = norm(nomXYZ'-enu_TRUTH(:,i));
+    F_Error_XYZ_ENU(i,1) = norm(enu_Est(:,i)-enu_TRUTH(:,i));
+end
+%% Plot the error results - ENU
+% figure
+% plot(time,F_Error_XYZ_ENU,time,F_Error_CLOCK)
+% legend('Position Error','Clock Error')
+% plot(time,F_Error_XYZ_ENU,'ro')
+% legend('Position Error')
+% % plot(time,F_Error_CLOCK)
+% % legend('Clock Error')
+% xlabel('Time [s]')
+% ylabel('ENU Error [m]')
+%% Calculating Difference Between Estimate and Truth ENU
+% Diff_ENU = enu_TRUTH - enu_Est;
+% Diff_ENU = Diff_ENU';
+% scatter3(Diff_ENU(:,1),Diff_ENU(:,2),Diff_ENU(:,3),'r.')
+% Xavg=mean(Diff_ENU(:,1));
+% Yavg=mean(Diff_ENU(:,2));
+% Zavg=mean(Diff_ENU(:,3));
+% AVG_Error=[Xavg,Yavg,Zavg]
+% grid on
+% xlabel=('Error in X-Direction [m]');
+% ylabel=('Error in Y-Direction [m]');
+% zlabel=('Error in Z-Direction [m]');
+% hold on
+% scatter3(Xavg,Yavg,Zavg,'b*')
+% legend('Error','Average')
