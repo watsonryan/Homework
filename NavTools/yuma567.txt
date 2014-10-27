@@ -1,0 +1,226 @@
+**** Week 567 almanac for SV-02 ***GPSIC****
+ID:                         02
+Health:                     000
+Eccentricity:               9.1691017151E-003
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   0.9569606185
+Rate of Right Ascen(r/s):  -8.0689073201E-009
+SQRT(A)  (m^1/2):           5154.330566
+Right Ascen at TOA(rad):   -8.2390832901E-001
+Argument of Perigee(rad):   3.117603779
+Mean Anom(rad):            -2.0464835167E+000
+Af0(s):                    -1.3351440430E-005
+Af1(s/s):                   0.0000000000E+000
+week:                       567
+
+**** Week 567 almanac for SV-03 ***GPSIC****
+ID:                         03
+Health:                     000
+Eccentricity:               1.2614250183E-002
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   1.1165125370
+Rate of Right Ascen(r/s):  -5.8859592755E-009
+SQRT(A)  (m^1/2):           5153.674805
+Right Ascen at TOA(rad):    4.6258807182E-001
+Argument of Perigee(rad):   2.572754860
+Mean Anom(rad):             1.1105971336E+000
+Af0(s):                    -2.7656555176E-005
+Af1(s/s):                  -9.0949470177E-011
+week:                       567
+
+**** Week 567 almanac for SV-06 ***GPSIC****
+ID:                         06
+Health:                     000
+Eccentricity:               6.1535835266E-003
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   1.1138221025
+Rate of Right Ascen(r/s):  -6.5717022935E-009
+SQRT(A)  (m^1/2):           5153.616699
+Right Ascen at TOA(rad):   -1.6569167376E+000
+Argument of Perigee(rad):   2.072480202
+Mean Anom(rad):            -6.0282182693E-001
+Af0(s):                    -8.1062316895E-005
+Af1(s/s):                  -1.4551915228E-011
+week:                       567
+
+**** Week 567 almanac for SV-09 ***GPSIC****
+ID:                         09
+Health:                     000
+Eccentricity:               1.5419006348E-002
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   1.1102987528
+Rate of Right Ascen(r/s):  -6.6288472489E-009
+SQRT(A)  (m^1/2):           5153.690918
+Right Ascen at TOA(rad):   -1.6651986837E+000
+Argument of Perigee(rad):   1.045478582
+Mean Anom(rad):            -2.7762842178E-001
+Af0(s):                    -6.1225891113E-004
+Af1(s/s):                  -3.2741809264E-011
+week:                       567
+
+**** Week 567 almanac for SV-11 ***GPSIC****
+ID:                         11
+Health:                     000
+Eccentricity:               1.4340877533E-002
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   1.1074225903
+Rate of Right Ascen(r/s):  -5.9545333109E-009
+SQRT(A)  (m^1/2):           5153.630859
+Right Ascen at TOA(rad):    4.5808500051E-001
+Argument of Perigee(rad):  -2.421407223
+Mean Anom(rad):            -2.3005902767E+000
+Af0(s):                    -2.2029876709E-004
+Af1(s/s):                  -3.6379788071E-012
+week:                       567
+
+**** Week 567 almanac for SV-12 ***GPSIC****
+ID:                         12
+Health:                     000
+Eccentricity:               1.0875225067E-002
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   1.1015921831
+Rate of Right Ascen(r/s):  -6.7088508082E-009
+SQRT(A)  (m^1/2):           5153.688477
+Right Ascen at TOA(rad):   -1.6743148565E+000
+Argument of Perigee(rad):  -0.527608097
+Mean Anom(rad):             6.5865182877E-001
+Af0(s):                     7.6293945312E-006
+Af1(s/s):                   3.6379788071E-012
+week:                       567
+
+**** Week 567 almanac for SV-13 ***GPSIC****
+ID:                         13
+Health:                     000
+Eccentricity:               2.3736953735E-003
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   1.1030243635
+Rate of Right Ascen(r/s):  -6.0345368702E-009
+SQRT(A)  (m^1/2):           5153.644531
+Right Ascen at TOA(rad):    4.4319871068E-001
+Argument of Perigee(rad):  -2.459573269
+Mean Anom(rad):             1.8731926680E+000
+Af0(s):                     5.0830841064E-004
+Af1(s/s):                   3.6379788071E-012
+week:                       567
+
+**** Week 567 almanac for SV-14 ***GPSIC****
+ID:                         14
+Health:                     000
+Eccentricity:               5.3009986877E-003
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   0.9606697559
+Rate of Right Ascen(r/s):  -7.7831812106E-009
+SQRT(A)  (m^1/2):           5153.713867
+Right Ascen at TOA(rad):    2.3483986855E+000
+Argument of Perigee(rad):   2.773597717
+Mean Anom(rad):             2.4935560226E+000
+Af0(s):                     6.7710876465E-005
+Af1(s/s):                   7.2759576142E-012
+week:                       567
+
+**** Week 567 almanac for SV-15 ***GPSIC****
+ID:                         15
+Health:                     000
+Eccentricity:               8.1024169922E-003
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   0.9577096701
+Rate of Right Ascen(r/s):  -7.8974711215E-009
+SQRT(A)  (m^1/2):           5153.592285
+Right Ascen at TOA(rad):    1.3204663992E+000
+Argument of Perigee(rad):   2.018058062
+Mean Anom(rad):            -1.8139648438E+000
+Af0(s):                     1.5258789062E-005
+Af1(s/s):                   3.6379788071E-012
+week:                       567
+
+**** Week 567 almanac for SV-16 ***GPSIC****
+ID:                         16
+Health:                     000
+Eccentricity:               2.2931098938E-003
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   0.9581890106
+Rate of Right Ascen(r/s):  -7.7717521307E-009
+SQRT(A)  (m^1/2):           5153.513672
+Right Ascen at TOA(rad):    2.3629441261E+000
+Argument of Perigee(rad):   2.716249466
+Mean Anom(rad):             3.3265623450E-001
+Af0(s):                    -4.4918060303E-004
+Af1(s/s):                  -4.7293724492E-011
+week:                       567
+
+**** Week 567 almanac for SV-17 ***GPSIC****
+ID:                         17
+Health:                     000
+Eccentricity:               6.6885948181E-003
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   0.9593575001
+Rate of Right Ascen(r/s):  -7.8631838818E-009
+SQRT(A)  (m^1/2):           5153.435059
+Right Ascen at TOA(rad):    1.3515350819E+000
+Argument of Perigee(rad):   1.009609818
+Mean Anom(rad):             1.4794806242E+000
+Af0(s):                     2.0027160645E-005
+Af1(s/s):                   0.0000000000E+000
+week:                       567
+
+**** Week 567 almanac for SV-18 ***GPSIC****
+ID:                         18
+Health:                     000
+Eccentricity:               4.1093826294E-003
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   0.9512621760
+Rate of Right Ascen(r/s):  -7.7031776513E-009
+SQRT(A)  (m^1/2):           5152.809570
+Right Ascen at TOA(rad):   -2.9165916443E+000
+Argument of Perigee(rad):   0.814089477
+Mean Anom(rad):             3.0243163109E+000
+Af0(s):                     1.9073486328E-006
+Af1(s/s):                   0.0000000000E+000
+week:                       567
+
+**** Week 567 almanac for SV-19 ***GPSIC****
+ID:                         19
+Health:                     000
+Eccentricity:               3.1857490540E-003
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   0.9513700008
+Rate of Right Ascen(r/s):  -8.2289135506E-009
+SQRT(A)  (m^1/2):           5155.315430
+Right Ascen at TOA(rad):   -1.8504750729E+000
+Argument of Perigee(rad):  -0.730251610
+Mean Anom(rad):            -2.3738145828E+000
+Af0(s):                     1.9073486328E-006
+Af1(s/s):                   0.0000000000E+000
+week:                       567
+
+**** Week 567 almanac for SV-20 ***GPSIC****
+ID:                         20
+Health:                     000
+Eccentricity:               3.5686492920E-003
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   0.9625273347
+Rate of Right Ascen(r/s):  -8.0574782402E-009
+SQRT(A)  (m^1/2):           5153.669434
+Right Ascen at TOA(rad):   -8.2139986753E-001
+Argument of Perigee(rad):   1.779285073
+Mean Anom(rad):            -3.0228741169E+000
+Af0(s):                     1.8119812012E-005
+Af1(s/s):                   3.6379788071E-012
+week:                       567
+
+**** Week 567 almanac for SV-21 ***GPSIC****
+ID:                         21
+Health:                     000
+Eccentricity:               9.8948478699E-003
+Time of Applicability(s):   118784.0000
+Orbital Inclination(rad):   0.9545278549
+Rate of Right Ascen(r/s):  -7.7946102905E-009
+SQRT(A)  (m^1/2):           5153.613770
+Right Ascen at TOA(rad):    2.3264162540E+000
+Argument of Perigee(rad):   2.068904400
+Mean Anom(rad):            -1.3844599724E+000
+Af0(s):                    -1.1444091797E-005
+Af1(s/s):                   0.0000000000E+000
+week:                       567
+
+
