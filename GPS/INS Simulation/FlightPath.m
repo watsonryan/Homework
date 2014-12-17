@@ -1,13 +1,10 @@
-function data = FlightPath
-
 %   Simplified 3-d navigation 
 
 
 clear all
-fprintf(1,' Creating flight profile \n')
-%insdem32
-load dem32_dat
 close all
+fprintf(1,' Creating flight profile \n')
+load dem32_dat
 
 npts = max(size(time));
 
